@@ -1,0 +1,474 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***************************************************************************/
+/*FLOAT CLEAR*/
+/***************************************************************************/
+
+.contain-group:before,
+.contain-group:after {
+    content: "";
+    display: table;
+}
+.contain-group:after {
+    clear: both;
+}
+.contain-group {
+    clear: both;
+    *zoom: 1;
+}
+
+/***************************************************************************/
+/*TOPOGRAPHY*/
+/***************************************************************************/
+
+h1 {
+    text-align: left;
+    font-size: 62px;
+    line-height: 54px;
+    color: #347867;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 400;
+    float: left;
+    margin-right: 5px;
+}
+
+h2 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    font-weight: 400;
+    color: #347867;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E9E2D0;
+}
+
+h4 {
+    color: #E9E2D0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 23px;
+    color: #E9E2D0;
+    font-weight: 700;
+
+}
+
+h6 {
+    font-size: 10px;
+    color: #347867;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#sub-job-title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    color: #aa9988;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+p {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: #aa9988;
+}
+
+#sidePanel p {
+    color: #252328;
+    font-size: 10px;
+}
+
+em{
+    color: #E9E2D0;
+    font-weight: 900;
+}
+
+#mainPanel em {
+    color: #E9E2D0;
+}
+
+.subpoint {
+    color: #E9E2D0;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+footer > p {
+    margin-top: 12px;
+    font-size: 8px;
+    text-align: center;
+}
+
+a {
+    color: #aa9988;
+}
+
+.nth-hobby {
+    color: #347867;
+}
+
+
+/***************************************************************************/
+/*MAIN-PANEL*/
+/***************************************************************************/
+
+#mainPanel {
+    background: #252328;
+    float: right;
+    width: 65%;
+    height:1035px;
+}
+
+#mainPanel li {
+    color: #aa9988;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+}
+
+.entry p {
+    margin-right: 5px;
+}
+
+header {
+    margin: 7px 0 10px 5px;
+}
+
+.entry {
+    margin-top: 27px;
+}
+
+.entry-left {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #E9E2D0;
+    /*margin-top: 5px;*/
+}
+
+.year {
+    font-size: 8px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #E9E2D0;
+}
+
+aside {
+    float: left;
+    width: 18%;
+    text-align: center;
+}
+
+aside img {
+    margin-top: -2px;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+main {
+    float: right;
+    width: 82%;
+}
+
+.entry-right {
+    /*margin-top: 5px;*/
+}
+
+.nth-entry {
+    margin-top: 10px;
+}
+
+.column1-2 {
+    float: left;
+    width: 50%;
+    font-size: 13px;
+}
+
+/***************************************************************************/
+/*PROJECTS*/
+/***************************************************************************/
+
+.column-1 {
+    float: left;
+    width: 32.672%;
+}
+.column-2 {
+    float: left;
+    width: 32.672%;
+    margin: 0 5px;
+}
+
+#projects {
+    margin: 27px 7px 0 10px;
+}
+
+#projects h2 {
+    text-align: center;
+}
+
+#projects h4 {
+    text-align: center;
+}
+
+#projects p {
+    text-align: left;
+    font-size: 10px;
+}
+
+
+/***************************************************************************/
+/*PROJECTS*/
+/***************************************************************************/
+
+
+#hobbies {
+    margin: 27px 10px 0 11px;
+
+}
+
+#hobbies h2 {
+    text-align: center;
+}
+
+.hobby {
+    float: left;
+    width: 15%;
+    height: 90%;
+    text-align: center;
+}
+
+.hobby-2 {
+    float: left;
+    width: 15%;
+    height: 90%;
+    text-align: center;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.hobby p {
+    font-size: 10px;
+}
+
+
+
+
+/***************************************************************************/
+/*SIDE PANEL*/
+/***************************************************************************/
+
+/*Blue: #347867*/
+/*Main: #575757*/
+/*Side: #3d3d3d*/
+
+#resumeContainer {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#sidePanel {
+    float: left;
+    width: 35%;
+    height: 1035px;
+    background: #347867;
+}
+
+#aboutMe > p {
+    font-size: 12px;
+}
+
+#profilePicContainer {
+    /*border-radius: 50%;*/
+    overflow: hidden;
+    width: 240px;
+    height: 240px;
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+    margin: 10px;
+    border: solid 10px #252328;
+}
+
+#profilePicContainer img {
+    display: block;
+    min-width: 260%;
+    min-height: 210%;
+    max-width: 260%;
+    max-height: 210%;
+    margin-top: -155px;
+}
+
+#contactMe {
+    margin: 0 10px;
+}
+
+.contact-image {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.contact-info {
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+    color: #252328;
+    font-family: 'Francois One', sans-serif;
+}
+
+#aboutMe {
+    margin: 10px 10px 0 10px;
+    color: #252328;
+    text-align: justify;
+}
+
+.column-left {
+    float: left;
+    width: 33.33%;
+    font-family: 'Francois One', sans-serif;
+}
+
+/***************************************************************************/
+/*Progress Bars*/
+/***************************************************************************/
+
+.progressbar {
+    background-color: #252328;
+    padding: 3px;
+    margin: 3px 0;
+}
+
+.progressbar > div {
+    background-color: #E9E2D0;
+    width: 40%;
+    height: 20px;
+    color: #252328;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: 'Francois One', sans-serif;
+}
+
+#languages {
+    margin-top: 9px;
+}
+
+#other-skills {
+    color: #252328;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+
+#skills {
+    margin: 10px 10px 0 10px;
+}
+
+#java {
+    width: 95%;
+}
+
+#android {
+    width: 85%;
+}
+
+#html {
+    width: 75%;
+}
+
+#css {
+    width: 75%;
+}
+
+#cpp {
+    width: 70%;
+}
+
+#c{
+    width: 60%;
+}
+
+#uml {
+    width: 90%;
+}
+
+#antlr {
+    width: 72%;
+}
+
+#sql {
+    width: 65%;
+}
+
+#english {
+    width: 99%;
+}
+
+#french {
+    width: 30%;
+}
