@@ -180,7 +180,7 @@ a {
     background: #252328;
     float: right;
     width: 65%;
-    height:1035px;
+    height:1055px;
 }
 
 #mainPanel li {
@@ -248,6 +248,18 @@ main {
     float: left;
     width: 50%;
     font-size: 13px;
+}
+
+.smaller-date {
+    font-size: 11px;
+}
+
+.current-pos {
+    color: #aa9988;
+}
+
+.last-li {
+    margin-bottom: 5px;
 }
 
 /***************************************************************************/
@@ -328,14 +340,14 @@ main {
 /*Side: #3d3d3d*/
 
 #resumeContainer {
-    width: 800px;
+    width: 815px;
     margin: 0 auto;
 }
 
 #sidePanel {
     float: left;
     width: 35%;
-    height: 1035px;
+    height: 1055px;
     background: #347867;
 }
 
@@ -377,13 +389,13 @@ main {
 
 .contact-info {
     font-size: 18px;
-    margin: 5px 0 5px 0;
+    margin: 10px 0 5px 0;
     color: #252328;
     font-family: 'Francois One', sans-serif;
 }
 
 #aboutMe {
-    margin: 10px 10px 0 10px;
+    margin: 17px 10px 0 10px;
     color: #252328;
     text-align: justify;
 }
@@ -420,7 +432,7 @@ main {
 
 #other-skills {
     color: #252328;
-    margin-top: 9px;
+    margin-top: 13px;
     margin-bottom: 9px;
     font-size: 14px;
 }
@@ -430,39 +442,40 @@ main {
 }
 
 #java {
-    width: 95%;
-}
-
-#android {
     width: 85%;
 }
 
 #html {
+    width: 65%;
+}
+
+#csharp {
+    width: 65%;
+}
+
+#android {
     width: 75%;
 }
 
-#css {
-    width: 75%;
+#javascript{
+    width: 65%;
 }
 
 #cpp {
-    width: 70%;
-}
-
-#c{
-    width: 60%;
+    width: 45%;
 }
 
 #uml {
-    width: 90%;
+    width: 75%;
 }
 
-#antlr {
-    width: 72%;
-}
 
 #sql {
-    width: 65%;
+    width: 70%;
+}
+
+#mongo {
+    width: 70%;
 }
 
 #english {
