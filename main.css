@@ -69,7 +69,7 @@ table {
 /***************************************************************************/
 
 body {
-    background: #027CAE;
+    background: #272d2d;
     --primary: #027CAE;
     --bg-light: #FFFFFF;
     --text-dark: #272D2D;
@@ -79,10 +79,10 @@ body {
 
 h1 {
 text-align: left;
-    font-size: 48px;
+    font-size: 38px;
     line-height: 48px;
     color: var(--bg-light);
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     float: left;
     margin-top: -5px;
@@ -102,7 +102,7 @@ h2 {
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 16px;
     color: var(--text-dark);
@@ -120,7 +120,8 @@ h5 {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     font-size: 22px;
-    letter-spacing: 0.6px;
+    letter-spacing: 1px;
+    text-align: center;
     color: var(--text-dark);
     font-weight: 700;
 }
@@ -229,7 +230,7 @@ header {
 }
 
 .entry {
-    margin-top: 18px;
+    margin-top: 36px;
 }
 
 .entry-left {
@@ -272,7 +273,7 @@ main {
 }
 
 .nth-entry {
-    margin-top: 15px;
+    margin-top: 36px;
 }
 
 .column1-2 {
@@ -298,10 +299,29 @@ main {
     margin-bottom: 5px;
 }
 
+.sub-section {
+  display: flex;
+  margin-top: 24px;
+  margin-right: 12px;
+}
+
+.sub-section h3 {
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+
+.awards-icon {
+  height: 25px;
+  margin: 0 12px;
+}
+
+
+
 /***************************************************************************/
 /*PROJECTS*/
 /***************************************************************************/
-
+/* 
 .column-1 {
     float: left;
     width: 32.672%;
@@ -310,13 +330,65 @@ main {
     float: left;
     width: 32.672%;
     margin: 0 5px;
-}
+} */
 
 #projects {
     margin: 17px 7px 0 10px;
+    background-color: white;
+    width: 100%;
+    height: 1064px;
+    margin-left: 0px;
+    border-top: solid darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 17px, auto;
+    /* margin: 48px; */
 }
 
-#projects h2 {
+#projects > section {
+  width: 70%;
+  justify-content: center;
+  margin-top: 36px;
+  margin-right: -30px;
+  display: flex;
+}
+
+#projects > section > div {
+  width: 80%;
+  margin-right: 30px;
+}
+
+#projects > section > ul {
+  width: 20%;
+}
+
+#projects > h2 {
+  margin-top: 48px;
+  font-size: 50px;
+}
+
+#projects h4 {
+  font-size: 22px;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+#projects h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+#projects p {
+  font-size: 16px;
+  line-height: unset;
+}
+
+
+
+/* #projects h2 {
     text-align: center;
 }
 
@@ -327,8 +399,8 @@ main {
 
 #projects p {
     text-align: justify;
-    font-size: 13px;
-}
+    font-size: 13px; */
+/* } */
 
 
 /***************************************************************************/
@@ -397,6 +469,10 @@ main {
     background: var(--primary);
 }
 
+#sidePanel > section {
+  margin-top: 24px;
+}
+
 #aboutMe > p {
     font-size: 14px;
 }
@@ -437,7 +513,7 @@ main {
 .contact-info {
     font-size: 15px;
     font-weight: 400;
-    margin: 10px 0 5px 0;
+    margin: 10px 0 12px 0;
     color: var(--text-dark);
     font-family: 'Francois One', sans-serif;
 }
