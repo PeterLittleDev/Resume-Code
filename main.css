@@ -317,6 +317,16 @@ main {
 }
 
 
+/***************************************************************************/
+/*REFERENCE*/
+/***************************************************************************/
+
+#references {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
 
 /***************************************************************************/
 /*PROJECTS*/
@@ -427,7 +437,7 @@ main {
 
 #projects p {
   font-size: 16px;
-  line-height: unset;
+  line-height: normal;
 }
 
 
@@ -469,7 +479,11 @@ main {
 }
 
 #hobbies h2 {
-    text-align: center;
+  text-align: center;
+}
+
+#hobbies-aside > h3 {
+  margin-left: 8px;
 }
 
 .hobby {
@@ -514,11 +528,12 @@ main {
 }
 
 #sidePanel > section {
-  margin-top: 24px;
+  margin-top: 40px;
 }
 
 #aboutMe > p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 #profilePicContainer {
@@ -542,8 +557,9 @@ main {
     margin-top: -155px;
 }
 
-#contactMe {
+section#contactMe {
     margin: 0 10px;
+    margin-top: 30px;
 }
 
 .contact-image {
@@ -565,7 +581,7 @@ main {
 #aboutMe {
     margin: 20px 10px 0 10px;
     color: var(--bg-light);
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .column-left {
