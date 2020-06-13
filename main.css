@@ -470,12 +470,14 @@ main {
 }
 
 #hobbies {
-    margin: 30px 10px 0 11px;
+    margin: 30px 12px 0 12px;
 }
 
 #hobbies-aside {
     margin-top: 20px;
     margin-bottom: 14px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 #hobbies h2 {
@@ -483,7 +485,7 @@ main {
 }
 
 #hobbies-aside > h3 {
-  margin-left: 8px;
+  /* margin-left: 8px; */
 }
 
 .hobby {
@@ -558,7 +560,7 @@ main {
 }
 
 section#contactMe {
-    margin: 0 10px;
+    margin: 0 12px;
     margin-top: 30px;
 }
 
@@ -579,7 +581,7 @@ section#contactMe {
 }
 
 #aboutMe {
-    margin: 20px 10px 0 10px;
+    margin: 20px 12px 0 12px;
     color: var(--bg-light);
     /* text-align: justify; */
 }
