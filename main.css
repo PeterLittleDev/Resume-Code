@@ -69,61 +69,90 @@ table {
 /***************************************************************************/
 
 body {
-    background: #272d2d;
-    --primary: #027CAE;
+    background: #c7c7c7;
+    /* --primary: #027CAE; */
+    /* --primary: #363636; */
+    --primary: #333333;
     --bg-light: #FFFFFF;
     --text-dark: #272D2D;
-    --text-secondary: #747A7A;
-    --text-light: #FFFFFF;
+    /* --text-secondary: #747A7A; */
+    --text-secondary: #565656;
+    --text-light: #c3c3c3;
 }
 
 h1 {
 text-align: left;
-    font-size: 38px;
+    font-size: 32px;
     line-height: 48px;
     color: var(--bg-light);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    /* font-weight: 600; */
     float: left;
-    margin-top: -5px;
+    margin-top: -3px;
     margin-left: -1px;
     margin-right: -1px;
     letter-spacing: 0.1px;
+    width: 100%;
+    text-align: center;
 }
 
 h2 {
-    font-family: 'Francois One', sans-serif;
-    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    opacity: 0.95;
     text-align: left;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--primary);
-    margin-bottom: 6px;
+    /* margin-bottom: 6px; */
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--text-dark);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  opacity: 0.95;
+  font-size: 13px;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+h3 > span {
+  text-align: right;
+  /* color: var(--text-secondary); */
+  color: var(--text-dark);
+  opacity: 0.9;
+  font-weight: normal;
+}
+
+#sidePanel h3 {
+  font-weight: 500;
 }
 
 h4 {
-    color: var(--text-dark);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-align: center;
+  color: var(--text-dark);
+  opacity: 0.9;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+h4 > span {
+  opacity: 0.5;
 }
 
 
 h5 {
     font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 22px;
-    letter-spacing: 1px;
+    /* text-align: left; */
+    font-size: 14px;
+    letter-spacing: 1.3px;
     text-align: center;
     color: var(--text-dark);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h6 {
@@ -132,6 +161,43 @@ h6 {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+}
+
+.solid {
+  border-top: 0.5px solid #bbb;
+  border-bottom: 0.5px solid #bbb;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+
+#pageNum {
+  position: relative;
+  text-align: right;
+  top: 15px;
+  right: 14px;
+  margin-bottom: -13px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--text-secondary);
+}
+
+#pageNum2 {
+  padding-right: 24px;
+}
+
+#pageNum2-contact {
+  padding-left: 24px;
+}
+
+#page2-header {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+}
+
+#projects #page2-header p {
+  font-size: 13px;
 }
 
 #sub-job-title {
@@ -149,17 +215,16 @@ h6 {
 
 p {
     font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: var(--text-secondary);
-}
-
-#sidePanel p {
-    color: var(--text-dark);
-    font-size: 10px;
 }
 
 #sidePanel h3 {
     color: var(--text-light)
+}
+
+#sidePanel h5 {
+  color: var(--text-light)
 }
 
 em{
@@ -205,7 +270,7 @@ a {
 #mainPanel {
     background: var(--bg-light);
     float: right;
-    width: 70%;
+    width: 68%;
     height:1064px;
     margin-top: -8px;
 }
@@ -216,9 +281,22 @@ section p {
 }
 
 #mainPanel li {
-    color: var(--text-secondary);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
+  /* font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-secondary); */
+
+  /* font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #828282;
+  line-height: 16px; */
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  /* font-weight: 400; */
+  color: #5f5f5f;
+  line-height: 16px;
 }
 
 .entry p {
@@ -264,8 +342,9 @@ aside img {
 }
 
 main {
-    float: right;
-    width: 82%;
+    /* float: right;
+    width: 82%; */
+    margin: 0 24px;
 }
 
 .entry-right {
@@ -283,7 +362,7 @@ main {
     text-align: justify;
 }
 
-#secondColumn {
+/* #secondColumn {
     margin-left: 10px;
 }
 
@@ -297,9 +376,9 @@ main {
 
 .last-li {
     margin-bottom: 5px;
-}
+} */
 
-.sub-section {
+/* .sub-section {
   display: flex;
   margin-top: 24px;
   margin-right: 12px;
@@ -309,12 +388,12 @@ main {
   font-size: 20px;
   margin-top: 3px;
   margin-bottom: 6px;
-}
+} */
 
-.awards-icon {
+/* .awards-icon {
   height: 25px;
   margin: 0 12px;
-}
+} */
 
 
 /***************************************************************************/
@@ -324,7 +403,7 @@ main {
 #references {
   text-align: center;
   margin-top: 30px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 
@@ -353,14 +432,26 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    margin: 17px, auto;
+    /* padding-top: 50px */
+    /* margin: 17px, auto; */
     /* margin: 48px; */
 }
 
 .projects-header {
   width: 80%;
-  margin-left: 30px;
+  /* justify-content: center; */
+  margin-top: 36px;
+  margin-right: -30px;
+  /* display: flex; */
+  text-align: left;
+  margin-bottom: -20px;
 }
+
+/* .projects-header > h2 {
+  margin-top: 48px;
+  font-size: 50px;
+  text-align: left;
+} */
 
 #projects > section {
   width: 80%;
@@ -387,9 +478,9 @@ main {
 }
 
 #projects li {
-  color: var(--primary);
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  color: var(--text-secondary);
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   text-align: left;
   margin-top: 6px;
@@ -406,12 +497,6 @@ main {
   margin-left: 20px;
 }
 
-.projects-header > h2 {
-  margin-top: 48px;
-  font-size: 50px;
-  text-align: left;
-}
-
 #projects h4 {
   font-size: 22px;
   opacity: 0.8;
@@ -420,11 +505,22 @@ main {
 }
 
 #projects h5 {
-  font-size: 14px;
+  letter-spacing: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 13px;
+  color: var(--text-dark);
+  /* margin-bottom: 4px; */
+  width: 100%;
+  text-align: left;
+  margin-top: 4px;
+
+  /* font-size: 14px;
   opacity: 0.7;
   text-align: left;
   margin-top: 10px;
-  width: 100%;
+  width: 100%; */
   /* margin-left: 36px; */
 }
 
@@ -438,6 +534,7 @@ main {
 #projects p {
   font-size: 16px;
   line-height: normal;
+  font-weight: 300;
 }
 
 
@@ -458,7 +555,7 @@ main {
 
 
 /***************************************************************************/
-/*PROJECTS*/
+/*HOBBIES*/
 /***************************************************************************/
 
 .grid-container {
@@ -475,9 +572,9 @@ main {
 
 #hobbies-aside {
     margin-top: 20px;
-    margin-bottom: 14px;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 #hobbies h2 {
@@ -498,7 +595,8 @@ main {
 
 .hobby-img {
     width: 60px;
-    color: red;
+    /* color: red; */
+    /* filter: invert(50%) sepia(1%) saturate(2471%) hue-rotate(144deg) brightness(93%) contrast(87%); */
 }
 
 .hobby p {
@@ -518,15 +616,21 @@ main {
 
 #resumeContainer {
     width: 815px;
-
+    box-shadow: 0px 0px 66px -19px rgba(0,0,0,0.75);
     margin: 0 auto;
 }
 
 #sidePanel {
     float: left;
-    width: 30%;
+    width: 32%;
     height: 1056px;
     background: var(--primary);
+    color: var(--text-light);
+}
+
+#sidePanel p {
+  color: var(--text-light);
+  font-weight: 300;
 }
 
 #sidePanel > section {
@@ -534,8 +638,10 @@ main {
 }
 
 #aboutMe > p {
-    font-size: 16px;
-    line-height: 16px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 300;
+  /* color: var(--text-light); */
 }
 
 #profilePicContainer {
@@ -560,7 +666,7 @@ main {
 }
 
 section#contactMe {
-    margin: 0 12px;
+    margin: 0 24px;
     margin-top: 30px;
 }
 
@@ -572,16 +678,46 @@ section#contactMe {
     margin-top: -2px;
 }
 
+.hobby-info > p {
+  height: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: -8px 0 19px 0;
+  color: var(--text-light);
+  font-family: 'montserrat', sans-serif;
+  padding-top: 12px;
+  padding-left: 42px;
+}
+
+
+.hobby-image {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  margin-top: 5px;
+}
+
+.piano-image {
+  height: 25px;
+  margin-top: 10px;
+}
+
 .contact-info {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
-    margin: 10px 0 12px 0;
-    color: var(--text-dark);
-    font-family: 'Francois One', sans-serif;
+    margin: 10px 0 20px 0;
+    color: var(--text-light);
+    font-family: 'montserrat', sans-serif;
+}
+
+.contact-info > p {
+  padding-left: 32px;
+  font-size: 16px;
 }
 
 #aboutMe {
-    margin: 20px 12px 0 12px;
+    margin: 20px 24px 0 24px;
     color: var(--bg-light);
     /* text-align: justify; */
 }
@@ -595,13 +731,23 @@ section#contactMe {
 .experience-points li {
     margin-bottom: 9px;
     margin-right: 5px;
-    font-size: 13px !important;
+    /* font-size: 13px !important; */
+}
+
+.education-points {
+  list-style-type: disc;
+}
+
+.education-points li {
+  margin-bottom: 9px;
+  margin-right: 5px;
+  margin-left: 20px;
 }
 
 /***************************************************************************/
 /*Progress Bars*/
 /***************************************************************************/
-
+/* 
 .progressbar {
     background-color: var(--text-dark);
     padding: 3px;
@@ -631,9 +777,9 @@ section#contactMe {
 
 #other-skills li {
     margin-bottom: 3px;
-}
+} */
 
-#skills {
+/* #skills {
     margin: 10px 10px 0 10px;
 }
 
@@ -684,4 +830,4 @@ section#contactMe {
 
 #french {
     width: 30%;
-}
+} */
