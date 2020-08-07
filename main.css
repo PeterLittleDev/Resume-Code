@@ -145,6 +145,8 @@ h4 {
   text-align: left;
   margin-bottom: 18px;
   font-size: 14px;
+  margin-left: -2px;
+  padding-left: 2px;
 }
 
 h4 > span {
@@ -297,6 +299,7 @@ section p {
   /* font-weight: 400; */
   color: #5f5f5f;
   line-height: 16px;
+  opacity: 0.9;
 }
 
 .entry p {
@@ -308,7 +311,7 @@ header {
 }
 
 .entry {
-    margin-top: 36px;
+    margin-top: 28px;
 }
 
 .entry-left {
@@ -444,7 +447,7 @@ main {
 .projects-header {
   width: 80%;
   /* justify-content: center; */
-  margin-top: 50px;
+  margin-top: 45px;
   margin-right: -30px;
   /* display: flex; */
   text-align: left;
@@ -704,7 +707,7 @@ section#contactMe {
 }
 
 #aboutMe {
-    margin: 20px 24px 0 24px;
+    margin: 20px 19px 0 24px;
     color: var(--bg-light);
     /* text-align: justify; */
 }
@@ -717,7 +720,7 @@ section#contactMe {
 
 .experience-points li {
     margin-bottom: 9px;
-    margin-right: 5px;
+    /* margin-right: 5px; */
     /* font-size: 13px !important; */
 }
 #education-text {
@@ -735,6 +738,11 @@ section#contactMe {
 #education-text .education-points > span {
   position: relative;
   left: -8px;
+}
+
+#education-text .education-points > span > span {
+  position: relative;
+  left: 19px;
 }
 
 /* .education-points > li {
